@@ -1,0 +1,199 @@
+/* Navbar container styling */
+.navbar-custom {
+    background: linear-gradient(45deg, #614385, #516395); /* Soft purple gradient */
+    position: fixed; /* Fixes the navbar to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+    opacity: 0.95;
+    color: white;
+    
+}
+
+
+/* Navbar links styling */
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    color: white;
+    background-color: transparent;
+    padding: 8px 15px;
+    margin: 0 5px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+    
+}
+
+/* Hover and focus state for navbar links */
+.navbar-custom .navbar-nav .nav-item .nav-link:hover,
+.navbar-custom .navbar-nav .nav-item .nav-link:focus {
+    background-color: #4834d4;
+    color: #ffffff;
+}
+
+/* Join Us/Login button styling */
+.navbar-custom .btn-primary {
+    background-color: #ff9f43;
+    border-color: #ff9f43;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.navbar-custom .btn-primary:hover {
+    background-color: #e58e26;
+    border-color: #e58e26;
+}
+
+/* Logo image size */
+.navbar-custom .navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+/* Background styling for body */
+body {
+    background-image: url('./images/plane.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+/* Form Container */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0); /* Fully transparent */
+    border-radius: 8px;
+    box-shadow: none; /* Remove box-shadow if you want it fully transparent */
+    
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+/* Input and Textarea Styling */
+.form-control {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #771010;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0b188f;
+    outline: none;
+    box-shadow: 0 0 0 .25rem rgba(103, 58, 183, 0.21);
+}
+
+/* Submit Button Styling */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #5a4fcf;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #4834d4;
+}
+
+/* Contact form styling */
+.uf-contact-form-01 {
+    max-width: 900px;
+    min-height: 100vh;
+    align-content: center;
+    margin-top: 100px;
+    
+}
+
+/* Primary color text and button styling */
+.uf-ct-01-text-primary {
+    color: #5a4fcf;
+}
+
+.uf-ct-01-btn-primary {
+    background-color: #864ef2;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.uf-ct-01-btn-primary:hover {
+    background-color: #641eec;
+}
+
+/* Animation */
+@keyframes uf-animation {
+    0% {top: 0px;}
+    50% {top: -30px;}
+    100% {top: 0px;}
+}
+
+.uf-img-contact-form-01 {
+    max-width: 100%;
+    animation: uf-animation 4s ease-in-out 1s infinite alternate;
+    position: relative;
+}
+/* Enhanced Heading Styling */
+/* Enhanced Heading Styling */
+.uf-ct-01-text-primary {
+    font-size: 3rem; /* Increase font size for more impact */
+    font-weight: 800; /* Make the font even bolder */
+    color: #5a4fcf; /* Primary color */
+    background: linear-gradient(45deg, #ff5f6d, #ffc3a0); /* Brighter gradient */
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Make the text gradient visible */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow for depth */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 3px; /* Increase letter spacing for boldness */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Add smooth transition for hover */
+    
+}
+
+/* Hover Effect */
+.uf-ct-01-text-primary:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover for emphasis */
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+body, .uf-contact-form-01 {
+    position: relative;
+    z-index: 1;
+}
