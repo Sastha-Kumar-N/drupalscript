@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Society for Interdisciplinary Biologist</title>
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="assets/css/leadmark.css">
+
+</head>
+
+
+
+<script>
+    // Wait until the document is fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select the navbar and logo elements
+        const navbar = document.querySelector(".navbar");
+        const logo = document.querySelector(".navbar-brand img");
+
+        // Add scroll event listener to the window
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 40) { // Adjust scrollY value as needed
+                navbar.classList.add("scrolled");
+                logo.src = "assets/imgs/WhatsApp_Image_2024-10-27_at_17.21.23_a3e271f3-removebg-preview.png"; // Path to new logo
+            } else {
+                navbar.classList.remove("scrolled");
+                logo.src = "assets/imgs/logo.svg"; // Original logo path
+            }
+        });
+    });
+</script>
+
+
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.svg" alt="" style="width: 200px; height: auto;">
+            </a>
+            
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../hostit-html/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events/index.html">Events & Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why Join/index.html">Why Join</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-form/index.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Forums</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#contact">Meet Us</a>
+                    </li> -->
+                    <li class="nav-item"> 
+                        <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Join Us/Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation add publications -->
+
+    <header class="header">
+        <div class="overlay" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <h1 class="title">Society for Interdisciplinary Biologists</h1> 
+            <h1 class="subtitle">Collaborate|Discover|Transform</h1> 
+        </div>  
+    </header>
+
+         </div>
+    </section>
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="assets/js/leadmark.js"></script>
+
+</body>
+</html>
