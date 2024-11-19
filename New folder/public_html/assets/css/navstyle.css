@@ -1,0 +1,30 @@
+/* Common styles for all nav links */
+.navbar-nav .nav-link {
+    position: relative; /* Required for positioning the underline */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Underline effect for all links except "Join Us/Login" */
+.navbar-nav .nav-link:not(.btn):hover::after {
+    content: ''; /* Creates a pseudo-element */
+    position: absolute; /* Position it below the link */
+    bottom: -2px; /* Slightly below the text */
+    left: 0;
+    width: 100%; /* Full width of the link */
+    height: 2px; /* Thickness of the underline */
+    background-color: #C71585; /* Dark pink color */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Optional: Change link color on hover for all except "Join Us/Login" */
+.navbar-nav .nav-link:not(.btn):hover {
+    color: #C71585;
+}
+
+/* Special styles for "Join Us/Login" button */
+.navbar-nav .btn:hover {
+    transform: scale(1.1); /* Makes the button bigger on hover */
+    transition: transform 0.3s ease; /* Smooth animation */
+    background-color: #C71585; /* Optional: Change background color on hover */
+    color: white; /* Optional: Change text color on hover */
+}

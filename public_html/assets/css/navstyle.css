@@ -28,3 +28,18 @@
     background-color: #C71585; /* Optional: Change background color on hover */
     color: white; /* Optional: Change text color on hover */
 }
+.navbar-toggler {
+    background-color: white !important;
+    border-color: white !important;
+}
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2730%27 height=%2730%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27black%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+}
+.navbar-toggler {
+    background-color: black !important; /* Black background for the box */
+    border-color: black !important;    /* Black border to match */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2730%27 height=%2730%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27white%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+}
